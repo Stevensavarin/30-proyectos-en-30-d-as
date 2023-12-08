@@ -1,0 +1,20 @@
+body{
+    background-color: black;
+}
+
+.fireworks{
+    width: 150px;
+    height: 150px;
+    background-image: url("img/fireworks.png");
+    background-size: 9600%;
+    background-position: left;
+    animation-name: move;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(95);
+}
+
+@keyframes move {
+    from{background-position: left;}
+    from{background-position: right;}
+}
