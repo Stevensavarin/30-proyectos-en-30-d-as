@@ -1,0 +1,33 @@
+html,body{
+    margin:5px;
+    background-color: #eee;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-column-gap:0em;
+}
+
+.container:hover .option{
+        filter: blur(2px);
+}
+
+.container .option{
+    transform:scale(1);
+    transition: all 0.3s ease-in;
+}
+
+.container .option:hover{
+    filter: blur(0px);
+    transform:scale(1.05);
+}
+
+.container .option{
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    width: 85%;
+    margin: 0 auto;
+    padding: 23px;
+}
